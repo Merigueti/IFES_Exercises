@@ -7,6 +7,7 @@ programa deve ao final determinar e exiba a frequência de cada avalição e as 
 estatísticas das respostas lidas: mínima, máxima, média, mediana, moda, variância e
 desvio padrão."""
 
+
 def get_mediada(number_list):
     number_list.sort()
     if len(number_list) % 2 == 0:
@@ -16,14 +17,17 @@ def get_mediada(number_list):
         index = int(len(number_list)/2)
         return number_list[index]
 
+
 def get_media(number_list):
     return sum(number_list)/len(number_list)
+
 
 def get_variancia(number_list):
     x = get_media(number_list)
     for xn in number_list:
         a = (xn-x)**2
     return a/(len(number_list)-1)
+
 
 notas = []
 

@@ -10,7 +10,7 @@ programa informa o valor da compra dividido em 4 vezes.
 
 total = 0
 print("================loja================")
-while(True):
+while (True):
     valor = float(input("Escreva o valor do produto ou 0 para sair: "))
     if valor > 0:
         total += valor
@@ -22,14 +22,14 @@ while (True):
     print("[1] A vista")
     print("[2] Cartão de crédito")
     valor = int(input())
-    if(valor == 1):
+    if (valor == 1):
         print(f"Valor total da compra R${total:.2f}")
-        print(f"Valor a pagar com desconto por pagamento a vista = R${total-total*0.15:.2f}")
+        print(
+            f"Valor a pagar com desconto por pagamento a vista = R${total-total*0.15:.2f}")
         break
-    elif(valor == 2):
+    elif (valor == 2):
         print(f"Valor total da compra: R${total:.2f}")
         print(f"valor dividido em 4 vezes: R${total/4:.2f}")
         break
     else:
         print("COMANDO INVALIDO\n\n")
-

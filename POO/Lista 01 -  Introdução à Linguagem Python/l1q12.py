@@ -41,10 +41,11 @@ total = produto_mais_de_5kg[carne][1]*peso
 
 
 print(f"{produto_mais_de_5kg[carne][0]} _________ {peso}kg")
-print(f"Total = R${total:.2f}" )
-if(peso <= 5):
+print(f"Total = R${total:.2f}")
+if (peso <= 5):
     total = produto_ate_5kg[carne][1]*peso
-    print(f"Desconto do produto = R${produto_mais_de_5kg[carne][1]*peso - total:.2f}")
+    print(
+        f"Desconto do produto = R${produto_mais_de_5kg[carne][1]*peso - total:.2f}")
     print(f"valor com desconto do produto: R${total}")
 
 if cartao:
@@ -54,4 +55,3 @@ if cartao:
     print(f"Valor Total com desconto do cartão: {total:.2f}\n")
 else:
     print("Pagamento efetuado sem cartão\n\n\n")
-

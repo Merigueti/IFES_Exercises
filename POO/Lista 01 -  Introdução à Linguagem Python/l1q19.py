@@ -14,4 +14,3 @@ for i in range(1, n):
     m += 2
 
 print(f"Valor final -> S = {s}")
-

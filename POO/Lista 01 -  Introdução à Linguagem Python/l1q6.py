@@ -10,9 +10,9 @@ horas, minutos e segundos. Por exemplo, 7564 segundos possuem “2 horas, 6 minu
 
 valor_em_segundos = int(input("Escreva um valor em segundos:"))
 
-horas = int(valor_em_segundos/(60*60))      #Verifica a quantidade de horas
-segundos = int(valor_em_segundos%(60*60))   #Pega o restante de segundos
-minutos = int(segundos/60)                  #Converte o restante em minutos
-segundos = segundos%60                      #Pega o restante de segundos novamente
+horas = int(valor_em_segundos/(60*60))  # Verifica a quantidade de horas
+segundos = int(valor_em_segundos % (60*60))  # Pega o restante de segundos
+minutos = int(segundos/60)  # Converte o restante em minutos
+segundos = segundos % 60  # Pega o restante de segundos novamente
 
 print(f"{valor_em_segundos} segundos possuem {horas} horas, {minutos} minutos e {segundos} segundos")

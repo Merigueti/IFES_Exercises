@@ -13,13 +13,13 @@ print("[C] - Comércio")
 tipo = str(input(""))
 tipo = tipo.upper()
 
-if(tipo == "R"):
+if (tipo == "R"):
     valorTotal = 0.4*kWh if kWh <= 500 else 0.65*kWh
     print(f"Residência: valor total = R${valorTotal:.2f}")
-elif(tipo == "C"):
+elif (tipo == "C"):
     valorTotal = 0.55*kWh if kWh <= 1000 else 0.60*kWh
     print(f"Comércio: valor total = R${valorTotal:.2f}")
-elif(tipo == "I"):
+elif (tipo == "I"):
     valorTotal = 0.55*kWh if kWh <= 5000 else 0.60*kWh
     print(f"Indústria: valor total = R${valorTotal:.2f}")
 else:

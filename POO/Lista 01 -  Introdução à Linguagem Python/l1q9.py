@@ -14,7 +14,7 @@ n2 = float(input("Escreva a nota 02: "))
 media = (n1+n2)/2
 print(f"Media = {media}")
 
-if(media >= 9.5):
+if (media >= 9.5):
     print("Aprovado com Distinção")
 elif (media >= 7):
     print("Aprovado")

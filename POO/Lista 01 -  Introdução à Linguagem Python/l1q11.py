@@ -7,11 +7,12 @@ o valor do imóvel a comprar dividido pelo número de parcelas a pagar.
 """
 
 imovel = float(input('Digite o valor do imóvel: '))
-salario= float(input('Agora escreva o seu salário: '))
-parcelas= int(input('Escreva em quantas parcelas o senhor pretende pagar: '))
+salario = float(input('Agora escreva o seu salário: '))
+parcelas = int(input('Escreva em quantas parcelas o senhor pretende pagar: '))
 
 valor_por_parcela = imovel/parcelas
-print(f"Valor por parcela = {valor_por_parcela:.2f} -> {(valor_por_parcela/salario)*100:.2f}%")
+print(
+    f"Valor por parcela = {valor_por_parcela:.2f} -> {(valor_por_parcela/salario)*100:.2f}%")
 
 pode_pagar = True if (valor_por_parcela/salario)*100 <= 40 else False
 
