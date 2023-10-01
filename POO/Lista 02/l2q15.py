@@ -43,6 +43,7 @@ fictício 11.222.333/0001-81.
         ii. Logo, o 2º dígito verificador deve ser igual a 1, que é igual ao do nosso CNPJ de exemplo, o que indica que o CN
 '''
 
+
 def validar_cnpj(_cnpj):
     d1 = 0
     d2 = 0
@@ -51,19 +52,20 @@ def validar_cnpj(_cnpj):
     mult2 = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
     for n in list(_cnpj):
         if n.isdigit():
-            cnpj.append(int(n)) 
+            cnpj.append(int(n))
     for i in range(len(mult1)):
         d1 += cnpj[i]*mult1[i]
-    d1 = 0 if d1/11 < 2 else 11- d1%11
+    d1 = 0 if d1/11 < 2 else 11 - d1 % 11
     if d1 != cnpj[12]:
         return False
     for i in range(len(mult2)):
         d2 += cnpj[i]*mult2[i]
-    d2 = 0 if d2/11 < 2 else 11- d2%11
+    d2 = 0 if d2/11 < 2 else 11 - d2 % 11
     if d2 != cnpj[13]:
         return False
-    
+
     return True
+
 
 print("VERIFICANDO CNPJ -> 11.222.333/0001-81")
 print(validar_cnpj('11.222.333/0001-81'))

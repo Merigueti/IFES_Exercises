@@ -30,19 +30,23 @@ a opção 6 - Sair.
 
 from agenda import *
 
+
 def limpar_tela():
     print("\n" * 50)
+
 
 def list_names(agenda):
     print("======NOMES======")
     for n in agenda.keys():
         print(n)
 
+
 def list_number(agenda, nome):
     print("=====Telefones=====")
     if nome in agenda:
         for n in agenda[nome]:
             print(n)
+
 
 while True:
     print("\n------ Menu Agenda ------")
@@ -52,15 +56,16 @@ while True:
     print("4 - Excluir nome")
     print("5 - Consultar telefone")
     print("6 - Sair")
-    
+
     option = input("Escolha uma opção: ")
 
-    if option == '1': #Incluir novo nome
+    if option == '1':  # Incluir novo nome
         limpar_tela()
         nome = input("Escreva o nome: ")
-        telefones = input("Escreva os telefones usando espaço para separar: ").strip().split(' ')
+        telefones = input(
+            "Escreva os telefones usando espaço para separar: ").strip().split(' ')
         incluir_novo_nome(nome, telefones)
-    elif option == '2': #Incluir Telefone
+    elif option == '2':  # Incluir Telefone
         limpar_tela()
         list_names(agenda)
         nome = str(input("Escreva o nome ao qual deseja incluir um telefone: "))
