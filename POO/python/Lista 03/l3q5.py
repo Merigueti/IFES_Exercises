@@ -6,4 +6,5 @@ pastas contidos no diretório informado pelo usuário.
 from os import listdir
 
 diretorio = input("Entre com o diretorio que deseja listar os arquivos:")
-print(listdir(diretorio))
+for arq in listdir(diretorio):
+    print(f"- {arq}")
