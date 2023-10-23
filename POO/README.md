@@ -12,5 +12,5 @@ The purpose of the lists is to solve the exercises using exclusively the materia
 2. Simple Data Structure
 3. Functions
 
-##List 03
+## List 03
 1. File Handling
