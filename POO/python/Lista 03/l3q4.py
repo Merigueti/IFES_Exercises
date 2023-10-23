@@ -15,7 +15,7 @@ except:
     print(f"Diretório -> {entrada} não foi encontrado")
 
 saida = input('Escreva o diretório de saida:\n')
-with open("C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/saida.txt", 'w', encoding='utf-8') as arq:
+with open("saida.txt", 'w', encoding='utf-8') as arq:
     for linha in lines:
         if linha[0] == '#':
             continue

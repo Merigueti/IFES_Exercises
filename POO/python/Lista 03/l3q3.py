@@ -15,9 +15,9 @@ print('START!')
 
 votacao = {}
 votos = []
-with open('C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/votos.txt', 'r', encoding='utf-8') as arq:
+with open('votos.txt', 'r', encoding='utf-8') as arq:
     votos = arq.read().splitlines() 
-    
+
 votacao['Goku'] = 0
 votacao["Vegeta"] = 0
 votacao["Gohan"] = 0

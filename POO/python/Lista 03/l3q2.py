@@ -8,13 +8,13 @@ Pesquise na internet como ordenar uma lista em Python.
 print('START!')
 
 lines = []
-with open('C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/nomes.txt', 'r', encoding='utf-8') as arq:
+with open('nomes.txt', 'r', encoding='utf-8') as arq:
     lines = arq.readlines()
     print(lines)
 
 lines.sort()
 print(lines)
-with open('C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/nomes_ordenados.txt', 'w', encoding='utf-8') as arq:
+with open('nomes_ordenados.txt', 'w', encoding='utf-8') as arq:
     for nome in lines:
         if '\n' in nome:
             arq.write(nome)
