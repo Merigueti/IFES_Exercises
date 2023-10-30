@@ -6,22 +6,22 @@ linhas comentadas (que começam com #). Teste sua função com diferentes arquiv
 entrada.
 '''
 
-entrada = input('Escreva o diretório de entrada:\n')
-lines = []
-try:
-    with open("C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/entrada.txt", 'r', encoding='utf-8') as arq:
-        lines = arq.read().splitlines() 
-except:
-    print(f"Diretório -> {entrada} não foi encontrado")
+def cop(dir1, dir2):
+    lines = []
+    try:
+        with open(dir1, 'r', encoding='utf-8') as arq:
+            lines = arq.read().splitlines() 
+    except:
+        print(f"Diretório -> {dir1} não foi encontrado")
+    with open(dir2, 'w', encoding='utf-8') as arq:
+        for linha in lines:
+            if linha[0] == '#':
+                continue
+            if '\n' in linha:
+                arq.write(linha)
+            else:
+                arq.write(linha + '\n')
 
-saida = input('Escreva o diretório de saida:\n')
-with open("saida.txt", 'w', encoding='utf-8') as arq:
-    for linha in lines:
-        if linha[0] == '#':
-            continue
-        if '\n' in linha:
-            arq.write(linha)
-        else:
-            arq.write(linha + '\n')
 
+cop("C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/entrada.txt", "C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/saida.txt")
 print('Programa finalizado!')
