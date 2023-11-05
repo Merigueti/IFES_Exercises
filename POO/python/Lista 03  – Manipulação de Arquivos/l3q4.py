@@ -23,5 +23,5 @@ def cop(dir1, dir2):
                 arq.write(linha + '\n')
 
 
-cop("C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/entrada.txt", "C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/saida.txt")
+cop("./entrada.txt", "./saida.txt")
 print('Programa finalizado!')
