@@ -5,11 +5,9 @@ Seu programa deve ler, processar o arquivo e gerar um outro arquivo CSV chamado
 maior pontuações. Seguem exemplos dos arquivos “pontuacoes.csv” e
 “maiores_pontuacoes.csv”:
 '''
-import csv
-
 
 lines = []
-with open('C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/pontuacoes.csv', 'r', encoding='utf-8') as arq:
+with open('./pontuacoes.csv', 'r', encoding='utf-8') as arq:
     lines = arq.readlines()
     print(lines)
 
@@ -28,7 +26,7 @@ for l in lines:
         
 maior.pop('nome')
 
-with open('C:/Users/20232ceca0399/Documents/lista/IFES_Exercises/POO/python/Lista 03/maiores_pontuacoes.csv', 'w', encoding='utf-8') as arq:
+with open('./maiores_pontuacoes.csv', 'w', encoding='utf-8') as arq:
     arq.write(f"nome;maior pontuação\n")
     for i in maior:
         print((f"{i};{maior[i]}"))
