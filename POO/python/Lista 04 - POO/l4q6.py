@@ -18,6 +18,8 @@ from Fatura import Fatura
 if __name__ == '__main__':
     f = Fatura(1,"Batata",15 , 1)
     print(f.calcular_valor_fatura())
+
+    
     f2 = Fatura(2,"Teste 2", -1, 15)
     print(f2.get_numero())
     print(f2.get_quant())
