@@ -28,10 +28,17 @@ class Fila:
         return self.__fila
     
     def pop(self):
-        self.__fila.pop(0)
+        if self.__fila:
+            self.__fila.pop(0)
     
     def append(self, n):
         self.__fila.append(n)
+    
+    def __len__(self):
+        return len(self.__fila)
+
+    def is_empty(self):
+        return len(self.__fila) == 0
 
     def __str__(self):
         return str(self.__fila)
@@ -41,5 +48,6 @@ print(f"Fila inicial = {a}")
 print("pop")
 a.pop()
 a.append(5)
+print(f"Função len retorna -> {len(a)}")
 print("apend(5)")
 print(f"Print fila final {a}")
